@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=0,initial-scale=0.7">
+<title>Document</title>
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src='js/jquery.easing.min.js'></script>
+<script src='js/style.js'></script>
+</head>
+<body>
+	<!-- 音频 -->
+	<audio autoplay loop>
+		<source src="audio/game_music.ogg"></source>
+		<source src="audio/game_music.wav"></source>
+		<source src="audio/game_music.mp3"></source>
+	</audio>
+	<audio id="dazhong">
+		<source src='audio/dazhong.wav'></source>
+		<source src='audio/dazhong.mp3'></source>
+	</audio>
+	<!-- 开始游戏弹出层 -->
+	<div class="box" id="start">
+		<button class="button big green">开始游戏</button>
+		<button class="button big orange">退&emsp;&emsp;出</button>
+	</div>
+	<!-- 难度选择 -->
+	<div class="box hide" id="level">
+		<button class="button big blue" id="sim">简单模式</button>
+		<button class="button big green" id="mid">一般模式</button>
+		<button class="button big orange" id="dif">困难模式</button>
+	</div>
+	<!-- 游戏结束弹出层 -->
+	<div class="box hide" id="end">
+		<div class="over"></div>
+		<button class="button mid blue" id="again">再来一局</button>
+		<button class="button mid green" id="back">返回主菜单</button>
+	</div>	
+	<!-- 主体 -->
+	<div class="main">
+		<div id="score">总分：<span>0</span></div><!-- 得分 -->
+		<div class="progress"><span></span></div><!-- 进度条 -->
+		<table>
+			<tr>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+			</tr>
+			<tr>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+			</tr>
+			<tr>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+			</tr>
+			<tr>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+				<td><div><s></s><span></span></div></td>
+			</tr>
+
+		</table>
+	</div>
+</body>
+</html>

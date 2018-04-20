@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+.hide{display: none;}
+button{outline: none}
+
+body{ cursor: url(../images/cursor.png),auto;background:#79b20d ;}
+.main{width: 450px;margin:0 auto;position: relative;padding-top: 50px}
+table{width: 450px;height: 600px;border-collapse:collapse;}
+td{width: 150px;height: 150px;background: url(../images/hole_03.png) no-repeat left bottom;background-size: 150px;position: relative;}
+table div{width: 150px;height: 140px;position: absolute;top:0;left: 0;overflow: hidden;}
+table span{width: 120px;height: 110px;  position: absolute;top: 125px;left: 15px;background: url(../images/mouse.png) no-repeat ;}
+table s{width: 90px;height: 35px;position: absolute;top: 40px;left: 55px;display: block;background: url(../images/icon.png) no-repeat ;z-index:10 ;display: none;}
+/*成绩*/
+#score{position: absolute;left: 0;top: 0;width: 150px;height: 50px;background: #4bbeed;border-radius:0 0 10px 10px;line-height: 50px;font-size: 20px;padding: 0 10px;color:#fff;}
+/*进度条*/
+.progress{position: absolute;right: 0 ;top: 20px;width: 200px;height: 20px;border:2px solid #4bbeed;border-radius: 10px;background: #ccc}
+.progress span{float: left;display: block;width: 200px;height: 20px;background: #4bbeed;}
+/*背景图位置*/
+s.one{background-position:-333px -22px}
+s.two{background-position:-16px -22px}
+s.three{background-position:-16px -92px}
+s.four{background-position:-217px -22px}
+s.five{background-position:-118px -22px}
+
+span.one{background-position:-17px -5px }
+span.two{background-position:-17px -120px }
+span.three{background-position:-17px -235px }
+span.four{background-position:-17px -350px }
+span.five{background-position:-20px -475px }
+span.one.hit{background-position: -420px -5px}
+span.two.hit{background-position: -420px -110px}
+span.three.hit{background-position: -420px -225px}
+span.four.hit{background-position: -420px -355px}
+span.five.hit{background-position: -420px -475px}
+
+/*模态层*/
+.modal{ width:100%; height:100%; background:#000; opacity:.3; position:fixed; top:0; left:0; z-index:20}
+
+/*开始按钮*/
+.box{width: 350px;height: 500px;position: absolute;left: 50%;margin-left:-150px;z-index: 30;padding-top: 200px;}
+.box button{display: block;margin: 50px auto;position: relative;}
+#start button:first-child{top: -300px;}
+#start button:last-child{top: -500px;} 
+#level button{position: relative;left: 200px ;opacity: 0;}
+#level button#mid{left: -200px}
+#level{padding-top:150px;}
+.box .over{width: 350px;height: 50px;background: url(../images/icon.png) no-repeat -21px -420px;}
